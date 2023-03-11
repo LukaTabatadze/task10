@@ -1,0 +1,1205 @@
+@font-face {
+	font-family: Dela;
+	src: url(fonts/DelaGothicOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: Mont;
+	src: url(fonts/montserrat-regular-webfont.woff);
+}
+
+@font-face {
+	font-family: Nunito;
+	src: url(fonts/Nunito-Regular.woff);
+}
+
+* {
+/*Miscellaneous*/
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+/*Positioning stuff*/
+	position: relative;
+/*Box model stuff*/
+	width: 0.5rem;
+	height: 100%;
+	border-radius: 5px;
+	background: linear-gradient(to top, #ff6a00, #ee0979);
+/*Manipulations stuff*/
+	animation: wave 2s ease-in-out infinite;
+/*Miscellaneous*/
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar-thumb {
+/*Box model stuff*/
+	border-radius: 100px;
+	background-color: rgb(119, 199, 172);
+}
+
+@keyframes wave {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(10px);
+		background: linear-gradient(to top, #ee0979, #ff6a00);
+	}
+
+	100% {
+		transform: translateY(0);
+		background: linear-gradient(to top, #ff6a00, #ee0979);
+	}
+}
+
+.background1 {
+/*Positioning stuff*/
+	position: absolute;
+
+}
+
+.background1 {
+/*Display stuff*/
+	display: block;
+/*Positioning stuff*/
+	z-index: 0;
+/*Box model stuff*/
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+
+}
+
+.container {
+/*Display stuff*/
+	display: flex;
+/*Positioning stuff*/
+	position: relative;
+
+}
+
+.navbar a {
+/*Display stuff*/
+	justify-content: center space-between;
+/*Box model stuff*/
+	padding: 1rem;
+/*Typography stuff*/
+	text-decoration: none;
+	color: #292930;
+}
+
+.navbar-a1 {
+/*Box model stuff*/
+	margin-left: 9rem;
+}
+
+.navbar-a1 a,
+.login,
+.blog a {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	color: #292930;
+/*Miscellaneous*/
+	line-height: 110.5%;
+
+}
+
+.login {
+/*Box model stuff*/
+	padding: 1rem;
+/*Typography stuff*/
+	text-decoration: none;
+}
+
+.navbar-a3 button {
+/*Display stuff*/
+	align-items: center;
+	justify-content: center;
+/*Box model stuff*/
+	width: 103px;
+	height: 44px;
+	margin-left: 1rem;
+	border: none;
+	border-radius: 7px;
+	background: #292930;
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: #F6F5F4;
+/*Miscellaneous*/
+	line-height: 100%;
+
+}
+
+.logo {
+/*Display stuff*/
+	display: inline-block;
+/*Positioning stuff*/
+	position: relative;
+/*Miscellaneous*/
+	overflow: hidden;
+}
+
+.dropdown {
+/*Display stuff*/
+	display: inline-block;
+/*Positioning stuff*/
+	position: relative;
+}
+
+.dropdown-content {
+/*Display stuff*/
+	display: none;
+/*Positioning stuff*/
+	position: absolute;
+	left: 50%;
+	top: 100%;
+/*Box model stuff*/
+	margin-left: 1rem;
+	padding: 10px;
+	border-radius: 5px;
+	border-radius: 10px;
+	background-color: #f1f1f1;
+	background: transparent;
+/*Manipulations stuff*/
+	transform: translateX(-50%);
+/*Miscellaneous*/
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.dropdown:hover .dropdown-content {
+/*Display stuff*/
+	display: block;
+}
+
+.dropdown-content a {
+/*Display stuff*/
+	display: block;
+/*Box model stuff*/
+	padding: 5px 10px;
+/*Typography stuff*/
+	text-decoration: none;
+	color: #292930;
+}
+
+.dropdown-content a:hover {
+/*Box model stuff*/
+	background-color: #f3f3f3;
+}
+
+.dropdown-item {
+/*Display stuff*/
+	display: block;
+/*Positioning stuff*/
+	position: relative;
+/*Box model stuff*/
+	padding: 0.5rem 1rem;
+}
+
+.dropdown-item::after {
+/*Display stuff*/
+	content: "";
+/*Positioning stuff*/
+	position: absolute;
+	left: 0;
+	bottom: 0;
+/*Box model stuff*/
+	width: 0%;
+	height: 2px;
+	background-color: #292930;
+/*Manipulations stuff*/
+	transition: width 0.3s ease;
+}
+
+.dropdown-item:hover::after {
+/*Box model stuff*/
+	width: 100%;
+}
+
+.dropdown-item::before {
+/*Display stuff*/
+	content: "";
+/*Positioning stuff*/
+	position: absolute;
+	left: 0;
+	bottom: 0;
+/*Box model stuff*/
+	width: 0%;
+	height: 2px;
+	border-color: #292930;
+	border-width: 0px 0px 0px 2px;
+	background-color: #292930;
+/*Manipulations stuff*/
+	transition: width 0.3s ease;
+}
+
+.dropdown-item:hover::before {
+/*Box model stuff*/
+	width: 100%;
+}
+
+.navbar-a1 a:hover {
+/*Typography stuff*/
+	color: #51515f}
+
+.navbar-a2 .login:hover {
+/*Typography stuff*/
+	color: #51515f}
+
+.blog a:hover {
+/*Typography stuff*/
+	color: #51515f}
+
+.text1 .span1 .span2 {
+
+	font-family: Nunito;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #FEC90C;
+	line-height: 156.5%;
+	letter-spacing: 0.135em;
+}
+
+.text1 .span1 {
+	background: linear-gradient(0deg, #232329, #232329)
+	font-family: Nunito;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 156.5%;
+	letter-spacing: 0.135em;
+}
+.span3 {
+	margin-top: 28px;
+	font-family: Nunito;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+	color: #292930;
+	line-height: 110.5%;
+}
+
+.span4 {
+/*Typography stuff*/
+	color: #5956E8;
+}
+
+.span1 {
+/*Box model stuff*/
+	margin-top: 8.1rem}
+
+.text1p {
+/*Box model stuff*/
+	margin-top: 24px;
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	color: #555555;
+/*Miscellaneous*/
+	line-height: 156.5%;
+}
+
+
+.btn1 {
+/*Display stuff*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+/*Box model stuff*/
+	width: 182px;
+	height: 54px;
+	border: 1px solid #292930;
+	border-radius: 7px;
+	background: #292930;
+/*Typography stuff*/
+	font-family: 'Nunito';
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	color: #FFFFFF;
+/*Miscellaneous*/
+	line-height: 160%;
+}
+
+.text1 {
+/*Display stuff*/
+	display: flex;
+/*Positioning stuff*/
+	position: relative;
+/*Box model stuff*/
+	width: 1703px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.content {
+/*Box model stuff*/
+	margin-left: 5rem;
+	margin-top: 4.7rem}
+
+.btn1:hover {
+/*Box model stuff*/
+	border: 1px smooth #292930;
+	background: transparent;
+/*Typography stuff*/
+	color: #292930}
+
+.btn2 {
+/*Display stuff*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+/*Box model stuff*/
+	width: 182px;
+	height: 54px;
+	margin-left: 1rem;
+	border: 1px smooth #292930;
+	border-radius: 7px;
+	background: #FFFFFF;
+	background: #292930;
+/*Typography stuff*/
+	font-family: 'Nunito';
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	color: #ffffff;
+/*Miscellaneous*/
+	line-height: 160%;
+}
+
+
+.btn2:hover {
+/*Box model stuff*/
+	border: 1px smooth #292930;
+	background: transparent;
+/*Typography stuff*/
+	color: #292930}
+
+.buttons1 {
+/*Display stuff*/
+	display: flex;
+/*Box model stuff*/
+	margin-top: -10px}
+
+
+.s2 {
+/*Box model stuff*/
+	max-width: 100%;
+	height: 1101px;
+	margin-top: 200px;
+	padding: 50px 0;
+	background-color: #292930;
+/*Typography stuff*/
+	color: #fff;
+}
+
+.container {
+/*Display stuff*/
+	display: flex;
+	align-items: center;
+
+}
+
+.container-content {
+/*Display stuff*/
+	display: flex;
+/*Box model stuff*/
+	width: 93%;
+	margin: 0 auto;
+	margin-top: 18px;
+	padding-bottom: 90px;
+
+}
+
+
+
+.content-text {
+/*Box model stuff*/
+	margin-left: 39px;
+}
+
+.span5 {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #FEC90C;
+/*Miscellaneous*/
+	line-height: 156.5%;
+	letter-spacing: 0.135em;
+}
+
+.span6 {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #D0D0D0;
+/*Miscellaneous*/
+	line-height: 156.5%;
+	letter-spacing: 0.135em;
+}
+
+.title {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 600;
+	color: #FFFFFF;
+/*Miscellaneous*/
+	line-height: 110.5%;
+	letter-spacing: 0.135rem;
+
+}
+
+.buttons2 {
+/*Box model stuff*/
+	width: 174px;
+	height: 62px;
+	margin-left: 100px;
+	margin-top: 20px}
+	border: none;
+	border-radius: 7px;
+	background: #FFFFFF;
+
+.buttons2 svg {
+/*Box model stuff*/
+	margin-top: -3px;
+
+}
+
+.getstarted:hover {
+/*Box model stuff*/
+	background: transparent;
+/*Typography stuff*/
+	color: #292930;
+}
+
+.buttons2:hover {
+/*Box model stuff*/
+	background: #4d4d5c;
+/*Typography stuff*/
+	color: #ffffff;
+}
+
+.backgr {
+/*Box model stuff*/
+	width: 260px;
+	height: 350px;
+	border-radius: 30px;
+	background: linear-gradient(180deg, #36363E 0%, #292930 100%);
+
+}
+
+.width {
+/*Box model stuff*/
+	width: 80%;
+	margin: 72px;
+	margin-left: 200px;
+}
+
+.line {
+/*Display stuff*/
+	display: flex;
+	flex: 1 0 100%;
+	flex-wrap: wrap;
+/*Box model stuff*/
+	margin-right: calc(var(--bs-gutter-x)/ -2);
+	margin-top: calc(var(--bs-gutter-y) * -1);
+/*Miscellaneous*/
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+
+}
+
+.backgroundimg {
+/*Display stuff*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+/*Box model stuff*/
+	width: 107px;
+	height: 107px;
+	border-radius: 100px;
+	background: #292930;
+}
+
+.title2 {
+/*Box model stuff*/
+	margin-top: 25px;
+/*Typography stuff*/
+	font-family: 'Nunito';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	color: #FFFFFF;
+/*Miscellaneous*/
+	line-height: 110.5%;
+}
+
+.cardp {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: lowercase;
+	color: #D0D0D0;
+/*Miscellaneous*/
+	line-height: 156.5%;
+}
+
+.buttons3 {
+/*Display stuff*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+/*Box model stuff*/
+	width: 206px;
+	height: 62px;
+	border: none;
+	border-radius: 7px;
+	background: transparent;
+/*Typography stuff*/
+	color: #525255;
+}
+
+.buttons3 svg {
+/*Box model stuff*/
+	margin-left: 8px;
+	margin-top: 2px}
+
+
+.buttons3:hover {
+/*Box model stuff*/
+	background: #FFDC60;
+/*Typography stuff*/
+	color: #292930;
+}
+
+
+.imgheader {
+/*Display stuff*/
+	display: flex;
+	justify-content: center;
+/*Box model stuff*/
+	margin-top: 54px;
+}
+
+.imgheader img {
+/*Box model stuff*/
+	width: 75px;
+	height: 75px;
+}
+
+.title4 {
+/*Display stuff*/
+	display: flex;
+	justify-content: center;
+/*Box model stuff*/
+	margin-top: 28px;
+}
+
+.span7 {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #5956E8;
+/*Miscellaneous*/
+	line-height: 156.5%;
+	letter-spacing: 0.135em;
+}
+
+.span8 {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #292930;
+/*Miscellaneous*/
+	line-height: 156.5%;
+	letter-spacing: 0.135em;
+}
+
+.title4-1 {
+/*Display stuff*/
+	display: flex;
+	justify-content: center;
+/*Box model stuff*/
+	margin-top: 9px;
+}
+
+.title4-1 .title4-2 {
+/*Typography stuff*/
+	font-family: 'Nunito';
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 700;
+	text-align: center;
+	color: #292930;
+/*Miscellaneous*/
+	line-height: 110.5%;
+	letter-spacing: 0.05rem}
+
+.crd {
+/*Box model stuff*/
+	margin: 14px;
+}
+
+.thirdsection .card {
+/*Display stuff*/
+	display: flex;
+/*Box model stuff*/
+	width: 389px;
+	height: 530px;
+	margin-bottom: 140px;
+	margin-top: 31px;
+	border: 1px solid #E2E2E2;
+	border-radius: 10px;
+	background: #F7F7F7;
+}
+
+.thirdsection .card2 {
+/*Box model stuff*/
+	background: #292930;
+
+}
+
+.img00 img {
+/*Box model stuff*/
+	width: 49px;
+	height: 49px;
+	margin-top: 40px;
+/*Miscellaneous*/
+	float: left;
+}
+
+.img0 img {
+/*Box model stuff*/
+	margin-top: 40px;
+/*Miscellaneous*/
+	float: left;
+}
+
+.thirdsection .card-title {
+/*Box model stuff*/
+	margin-right: 185px;
+	margin-top: 24px;
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 700;
+	text-align: center;
+	color: #292930;
+/*Miscellaneous*/
+	line-height: 110.5%;
+
+}
+
+.thirdsection .card-body-2 {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-style: normal;
+	text-align: center;
+	color: #F7F7F7}
+/*Miscellaneous*/
+	line-height: 110.5%;
+
+.thirdsection .card-title-2 {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 700;
+	text-align: center;
+	color: #F7F7F7;
+/*Miscellaneous*/
+	line-height: 110.5%;
+}
+
+.span11 {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 40px;
+	font-style: bold;
+	font-weight: 900;
+	text-align: center;
+	color: #292930;
+/*Miscellaneous*/
+	line-height: 110.5%;
+}
+
+.span9 {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 40px;
+	font-style: bold;
+	font-weight: 900;
+	text-align: center;
+	color: #F7F7F7;
+/*Miscellaneous*/
+	line-height: 110.5%;
+
+}
+
+.thirdsection .span11 {
+/*Box model stuff*/
+	margin-left: 16px;
+}
+
+
+.topright {
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 12px;
+	font-style: bold;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	color: #292930;
+/*Miscellaneous*/
+	float: right;
+	line-height: 244%;
+
+}
+
+.bg-custom-0 {
+/*Display stuff*/
+	align-items: center;
+	justify-content: center;
+/*Box model stuff*/
+	width: 79px;
+	height: 35px;
+	border: none;
+	border-radius: 10px;
+	background: #FFDC60;
+
+}
+
+
+.span10 {
+/*Box model stuff*/
+	margin-right: 99px;
+}
+
+.list-group-2,
+.list-group-3 {
+/*Box model stuff*/
+	margin-top: 25px;
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	text-align: justify;
+/*Miscellaneous*/
+	list-style-image: url("Vector (1).png");
+	line-height: 244%;
+}
+
+.list-group-3 {
+/*Typography stuff*/
+	color: #292930;
+}
+
+
+
+.buttonwhite {
+/*Display stuff*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+/*Box model stuff*/
+	width: 313px;
+	height: 64px;
+	margin-bottom: 30px;
+	border: none;
+	border-radius: 7px;
+	background: #F6F6F6;
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	color: #292930;
+/*Miscellaneous*/
+	line-height: 160%;
+}
+
+
+.buttonblack {
+/*Display stuff*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+/*Box model stuff*/
+	width: 313px;
+	height: 64px;
+	margin-right: 20px;
+	border: none;
+	border-radius: 7px;
+	background: #292930;
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	color: #FFFFFF;
+/*Miscellaneous*/
+	line-height: 160%;
+}
+
+.list-group-3 ul {
+/*Box model stuff*/
+	margin-left: 50px;
+}
+
+
+.list-group-2 li,
+.list-group-3 li {
+/*Box model stuff*/
+	padding: 3px;
+}
+
+.red-li {
+/*Miscellaneous*/
+	list-style-image: url("Vector.png")}
+
+
+
+.s4 {
+/*Box model stuff*/
+	max-width: 100%;
+	height: 800px;
+	background: #292930;
+}
+
+.s4-heading1 {
+/*Box model stuff*/
+	margin-left: 30px;
+/*Typography stuff*/
+	font-family: 'Nunito';
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 600;
+	color: #FFFFFF;
+/*Miscellaneous*/
+	line-height: 110.5%;
+
+}
+
+.email {
+/*Box model stuff*/
+	width: 273px;
+	height: 62px;
+	margin-left: 30px;
+	border: none;
+	border-radius: 7px;
+	background: #5B5B61;
+/*Typography stuff*/
+	font-family: 'Nunito';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: #FFFFFF;
+/*Miscellaneous*/
+	line-height: 160%;
+}
+
+
+.button-section-4 {
+/*Box model stuff*/
+	width: 273px;
+	height: 62px;
+	margin-left: 30px;
+	margin-top: 18px;
+	border: none;
+	border-radius: 7px;
+	background: #FFDC60;
+/*Typography stuff*/
+	font-family: 'Nunito';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: #292930;
+/*Miscellaneous*/
+	line-height: 160%;
+}
+
+::-webkit-input-placeholder {
+/*Typography stuff*/
+	color: white;
+}
+
+.email:focus {
+/*Box model stuff*/
+	background: #292930;
+}
+
+.button-section-4:hover {
+/*Box model stuff*/
+	border: 1px solid #FFDC60;
+	background: transparent;
+/*Typography stuff*/
+	color: #FFDC60;
+}
+
+.s4-p1 {
+/*Box model stuff*/
+	margin-left: 30px;
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	color: #D0D0D0;
+/*Miscellaneous*/
+	line-height: 156.5%;
+}
+
+.card4 {
+/*Display stuff*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+/*Positioning stuff*/
+	position: relative;
+/*Box model stuff*/
+	width: 365px;
+	min-width: 0;
+	height: 600px;
+	margin-left: 120px;
+	margin-top: 151px;
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-radius: 0.25rem;
+	background-clip: border-box;
+	background: #3C3C45;
+/*Miscellaneous*/
+	word-wrap: break-word;
+}
+
+.logo1x {
+/*Positioning stuff*/
+	left: 0px;
+	top: 0px;
+/*Box model stuff*/
+	width: 239px;
+	height: 81.164306640625px;
+	margin-left: 30px;
+	margin-top: 30px;
+	border-radius: 0px;
+
+}
+
+.logo2x {
+/*Box model stuff*/
+	width: 236.49365234375px;
+	height: 160.30429077148438px;
+	margin-left: 42px;
+}
+
+.card-body-4 {
+/*Display stuff*/
+	flex: 1 1 auto;
+/*Box model stuff*/
+	padding: 1rem 1rem;
+}
+
+.roww {
+/*Display stuff*/
+	display: flex;
+	flex: 1 0 100%;
+	flex-wrap: wrap;
+/*Box model stuff*/
+	margin-left: calc(var(--bs-gutter-x)/ -2);
+	margin-right: calc(var(--bs-gutter-x)/ -2);
+	margin-top: calc(var(--bs-gutter-y) * -1);
+/*Miscellaneous*/
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+}
+
+.section4-footer {
+/*Display stuff*/
+	display: flex;
+	flex: 1 0 100%;
+	flex-wrap: wrap;
+/*Box model stuff*/
+	margin-right: calc(var(--bs-gutter-x)/ -2);
+	margin-top: 151px;
+/*Miscellaneous*/
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+
+}
+
+.sa p {
+/*Box model stuff*/
+	margin-left: 70px;
+}
+
+.section4-footer-2 {
+/*Display stuff*/
+	display: flex;
+	flex: 1 0 100%;
+	flex-wrap: wrap;
+/*Box model stuff*/
+	margin-left: -30px;
+/*Miscellaneous*/
+	--bs-gutter-x: 1.5rem;
+	--bs-gutter-y: 0;
+}
+
+.s4 li {
+/*Box model stuff*/
+	margin-right: 10px;
+	padding: 6px;
+/*Miscellaneous*/
+	list-style-type: none;
+}
+
+.s4 li a {
+/*Typography stuff*/
+	text-decoration: none;
+	color: azure;
+}
+
+.a12 {
+/*Typography stuff*/
+	color: #FFDC60;
+}
+
+.a12:hover {
+/*Typography stuff*/
+	color: #FFDC60;
+}
+
+.button2-section-4 {
+/*Box model stuff*/
+	width: 200px;
+	height: 50px;
+	margin-top: 12px;
+	border: none;
+	border-radius: 7px;
+	background: #3C3C45;
+/*Typography stuff*/
+	font-family: Nunito;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	color: #FFDC60;
+/*Miscellaneous*/
+	line-height: 156.5%;
+}
+
+.section-4-2-b p {
+/*Box model stuff*/
+	margin-top: 12px;
+}
+
+.section-4-3-b p {
+/*Box model stuff*/
+	margin-top: 20px;
+}
+
+.section-4-3-b a {
+/*Box model stuff*/
+	margin-bottom: 9px;
+}
+
+.section4-footer-2 {
+/*Box model stuff*/
+	margin-top: 50px;
+}
+
+.footerheading {
+/*Typography stuff*/
+	font-family: 'Nunito';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	color: #FFFFFF;
+/*Miscellaneous*/
+	line-height: 110.5%;
+}
+
+.footerimg {
+/*Box model stuff*/
+	width: 22px;
+	height: 22px;
+}
+
+
+.footerimg0 {
+/*Box model stuff*/
+	width: 16px;
+	height: 21px;
+}
+
+.footerimg1 {
+/*Box model stuff*/
+	width: 30px;
+	height: 30px;
+}
+
+.footerimg2 {
+/*Box model stuff*/
+	width: 28px;
+	height: 28px;
+}
+
+.footerimg3 {
+/*Box model stuff*/
+	width: 20px;
+	height: 16px;
+}
+
+
+.footerheading .footerspan {
+/*Box model stuff*/
+	margin-left: 3px;
+}
+
+.s4{
+	color: white;
+}
