@@ -484,10 +484,11 @@
 	width: 174px;
 	height: 62px;
 	margin-left: 100px;
-	margin-top: 20px}
+	margin-top: 20px
 	border: none;
 	border-radius: 7px;
 	background: #FFFFFF;
+}
 
 .buttons2 svg {
 /*Box model stuff*/
