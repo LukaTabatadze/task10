@@ -170,12 +170,13 @@
 	border-radius: 5px;
 	border-radius: 10px;
 	background-color: #f1f1f1;
-	background: transparent;
+	background:#f4f5f6 ;
+	opacity: 90%;
 /*Manipulations stuff*/
 	transform: translateX(-50%);
 /*Miscellaneous*/
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
+ z-index:1000;
 }
 
 .dropdown:hover .dropdown-content {
@@ -407,7 +408,7 @@
 .s2 {
 /*Box model stuff*/
 	max-width: 100%;
-	height: 1101px;
+	height: 1401px;
 	margin-top: 200px;
 	padding: 50px 0;
 	background-color: #292930;
@@ -426,7 +427,7 @@
 /*Display stuff*/
 	display: flex;
 /*Box model stuff*/
-	width: 93%;
+	width: 99%;
 	margin: 0 auto;
 	margin-top: 18px;
 	padding-bottom: 90px;
@@ -437,7 +438,7 @@
 
 .content-text {
 /*Box model stuff*/
-	margin-left: 39px;
+	margin-left: 45px;
 }
 
 .span5 {
@@ -483,8 +484,8 @@
 /*Box model stuff*/
 	width: 174px;
 	height: 62px;
-	margin-left: 100px;
-	margin-top: 20px
+	margin-left: 290px;
+	margin-top: 35px;
 	border: none;
 	border-radius: 7px;
 	background: #FFFFFF;
@@ -512,18 +513,17 @@
 
 .backgr {
 /*Box model stuff*/
-	width: 260px;
-	height: 350px;
+	width: 317px;
+	height: 428px;
 	border-radius: 30px;
-	background: linear-gradient(180deg, #36363E 0%, #292930 100%);
+	background: linear-gradient(to bottom, #36363E 55% ,#292930);
 
 }
 
 .width {
 /*Box model stuff*/
 	width: 80%;
-	margin: 72px;
-	margin-left: 200px;
+	margin: 72px 0px 72px 60px;
 }
 
 .line {
@@ -531,16 +531,21 @@
 	display: flex;
 	flex: 1 0 100%;
 	flex-wrap: wrap;
+	justify-content:center;
 /*Box model stuff*/
 	margin-right: calc(var(--bs-gutter-x)/ -2);
 	margin-top: calc(var(--bs-gutter-y) * -1);
 /*Miscellaneous*/
 	--bs-gutter-x: 1.5rem;
 	--bs-gutter-y: 0;
+}
 
+.col-lg-3{
+	margin-left:88px;
 }
 
 .backgroundimg {
+	margin-left:19px;
 /*Display stuff*/
 	display: flex;
 	align-items: center;
@@ -555,11 +560,12 @@
 .title2 {
 /*Box model stuff*/
 	margin-top: 25px;
+	margin-left:19px;
 /*Typography stuff*/
 	font-family: 'Nunito';
-	font-size: 20px;
+	font-size: 24px;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 	color: #FFFFFF;
 /*Miscellaneous*/
 	line-height: 110.5%;
@@ -567,25 +573,31 @@
 
 .cardp {
 /*Typography stuff*/
+margin-left:19px;
 	font-family: Nunito;
-	font-size: 15px;
+	font-size: 18px;
 	font-style: normal;
-	font-weight: 400;
-	text-transform: lowercase;
-	color: #D0D0D0;
+	color: #c5c5c5;
+	opacity:70%;
 /*Miscellaneous*/
 	line-height: 156.5%;
 }
 
+.coldiv{
+	margin-left:40px;
+}
+
 .buttons3 {
 /*Display stuff*/
+	margin-left:19px;
+	margin-top:100px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 /*Box model stuff*/
-	width: 206px;
-	height: 62px;
-	border: none;
+	width: 250px;
+	height: 72px;
+	border: 1px solid #525255;
 	border-radius: 7px;
 	background: transparent;
 /*Typography stuff*/
@@ -909,7 +921,7 @@
 .s4 {
 /*Box model stuff*/
 	max-width: 100%;
-	height: 800px;
+	height: 1000px;
 	background: #292930;
 }
 
@@ -1046,6 +1058,8 @@
 	padding: 1rem 1rem;
 }
 
+
+
 .roww {
 /*Display stuff*/
 	display: flex;
@@ -1054,7 +1068,7 @@
 /*Box model stuff*/
 	margin-left: calc(var(--bs-gutter-x)/ -2);
 	margin-right: calc(var(--bs-gutter-x)/ -2);
-	margin-top: calc(var(--bs-gutter-y) * -1);
+	
 /*Miscellaneous*/
 	--bs-gutter-x: 1.5rem;
 	--bs-gutter-y: 0;
@@ -1156,9 +1170,9 @@
 .footerheading {
 /*Typography stuff*/
 	font-family: 'Nunito';
-	font-size: 20px;
+	font-size: 19px;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 600;
 	color: #FFFFFF;
 /*Miscellaneous*/
 	line-height: 110.5%;
