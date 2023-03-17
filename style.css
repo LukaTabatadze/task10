@@ -18,6 +18,32 @@
 	box-sizing: border-box;
 }
 
+@media screen and (min-width:1920px){
+	.s2{max-width: 100%;
+		height: 1701px;
+		margin-top: 200px;
+		padding: 50px 0;
+		background-color: #292930;
+		color: #fff;}
+.con{
+	margin-top:300px;
+display:grid;
+justify-content:center;
+}
+}
+
+.background1{
+	width:1920px;
+	max-height:1101px;
+}
+
+.container-content{
+	width:1920px;
+	justify-content:center;
+}
+
+}
+
 ::-webkit-scrollbar {
 /*Positioning stuff*/
 	position: relative;
@@ -57,11 +83,8 @@
 .background1 {
 /*Positioning stuff*/
 	position: absolute;
-
-}
-
-.background1 {
-/*Display stuff*/
+	align-items: center;
+	/*Display stuff*/
 	display: block;
 /*Positioning stuff*/
 	z-index: 0;
@@ -71,7 +94,6 @@
 	margin: 0;
 	padding: 0;
 	border: none;
-
 }
 
 .container {
@@ -82,7 +104,9 @@
 
 }
 
-.navbar{max-width:1200px;}
+.navbar{max-width:1920px;
+min-width:1200px;
+display:flex;}
 
 .navbar a {
 /*Display stuff*/
@@ -94,10 +118,6 @@
 	color: #292930;
 }
 
-.navbar-a1 {
-/*Box model stuff*/
-	margin-left: 9rem;
-}
 
 .navbar-a1 a,
 .login,
@@ -120,7 +140,7 @@
 	text-decoration: none;
 }
 
-.navbar-a3 button {
+.navbar-a3 {
 /*Display stuff*/
 	align-items: center;
 	justify-content: center;
@@ -303,7 +323,7 @@
 
 .span1 {
 /*Box model stuff*/
-	margin-top: 8.1rem}
+	margin-top: 4rem}
 
 .text1p {
 /*Box model stuff*/
@@ -357,7 +377,8 @@
 .content {
 /*Box model stuff*/
 	margin-left: 5rem;
-	margin-top: 4.7rem}
+	
+display:grid;}
 
 .btn1:hover {
 /*Box model stuff*/
@@ -410,8 +431,8 @@
 .s2 {
 /*Box model stuff*/
 	max-width: 100%;
-	height: 1401px;
-	margin-top: 200px;
+	height: 1701px;
+	margin-top: 70px;
 	padding: 50px 0;
 	background-color: #292930;
 /*Typography stuff*/
@@ -431,7 +452,7 @@
 /*Box model stuff*/
 	width: 99%;
 	margin: 0 auto;
-	margin-top: 18px;
+	margin-top: 80px;
 	padding-bottom: 90px;
 
 }
@@ -933,12 +954,14 @@ margin-left:19px;
 	height: 1000px;
 	background: #292930;
 	display:flex;
+	
 	justify-content:center;
 }
 
 .custom-cont{
 	max-width:702px;
 	height:645px;
+	
 }
 
 .s4-heading1 {
@@ -957,6 +980,7 @@ margin-left:19px;
 
 .secondcont{
 	margin-left:99px;
+	margin-top:160px;
 }
 
 .email {
@@ -1049,6 +1073,7 @@ margin-left:19px;
 	background: #3C3C45;
 /*Miscellaneous*/
 	word-wrap: break-word;
+	margin-left:70px;
 }
 
 .logo1x {
@@ -1107,12 +1132,10 @@ margin-left:19px;
 	margin-top:-20px;
 }
 
-.section4-5{
-	margin-top:-34px;
+.section-4-5{
+	margin-left:-10px;
 }
-.section4-6{
-	margin-top:-70px;
-}
+
 .li2{
 	margin-top:10px;
 }
@@ -1219,6 +1242,19 @@ margin-left:19px;
 /*Miscellaneous*/
 	line-height: 110.5%;
 }
+
+.footerheading2 {
+	/*Typography stuff*/
+		font-family: 'Nunito';
+		font-size: 19px;
+		font-style: normal;
+		font-weight: 600;
+		color: #FFFFFF;
+	/*Miscellaneous*/
+		line-height: 110.5%;
+		margin-top:23px;
+	}
+	
 
 .footerimg {
 /*Box model stuff*/
